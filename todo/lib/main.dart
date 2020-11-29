@@ -10,6 +10,11 @@ void main() {
 class Todo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        title: Center(child: Text("Welcome to the Todo App!")),
+      ),
+      body: Center(),
+    );
   }
 }
