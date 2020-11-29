@@ -5,3 +5,10 @@ void main() {
     home: Todo(),
   ));
 }
+
+class Todo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold();
+  }
+}
