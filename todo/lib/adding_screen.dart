@@ -11,8 +11,11 @@ class AddingScreen extends StatelessWidget {
         child: Form(
           child: Column(
             children: <Widget>[
-              TextFormField(
-                decoration: InputDecoration(hintText: 'Your new Todo!'),
+              Padding(
+                padding: EdgeInsets.fromLTRB(16, 16, 16, 0),
+                child: TextFormField(
+                  decoration: InputDecoration(hintText: 'Your new Todo!'),
+                ),
               ),
             ],
           ),
