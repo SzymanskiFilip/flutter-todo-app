@@ -5,7 +5,7 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     theme: ThemeData.dark(),
-    home: Todo(),
+    home: AddingScreen(),
   ));
 }
 
