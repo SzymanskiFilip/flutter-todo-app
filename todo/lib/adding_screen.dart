@@ -8,7 +8,15 @@ class AddingScreen extends StatelessWidget {
         title: Center(child: Text("Add Your Todo!")),
       ),
       body: Center(
-        child: Text("FORM"),
+        child: Form(
+          child: Column(
+            children: <Widget>[
+              TextFormField(
+                decoration: InputDecoration(hintText: 'Your new Todo!'),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
