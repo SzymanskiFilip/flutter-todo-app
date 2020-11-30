@@ -7,6 +7,8 @@ void main() {
   ));
 }
 
+List<String> items = ['hello', 'world'];
+
 class Todo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -14,7 +16,26 @@ class Todo extends StatelessWidget {
       appBar: AppBar(
         title: Center(child: Text("Welcome to the Todo App!")),
       ),
-      body: Center(),
+      body: Center(
+        child: Column(
+          children: <Widget>[
+            for (final value in items)
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text(
+                    value,
+                    key: Key(value),
+                  ),
+                ],
+              )
+          ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Icon(Icons.add),
+      ),
     );
   }
 }
