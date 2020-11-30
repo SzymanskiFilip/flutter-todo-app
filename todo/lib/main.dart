@@ -21,6 +21,19 @@ class Todo extends StatelessWidget {
       body: Center(
         child: Column(
           children: <Widget>[
+            Center(
+              child: Padding(
+                padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+                child: Text(
+                  "This are your todos!",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 25,
+                    backgroundColor: Colors.purple,
+                  ),
+                ),
+              ),
+            ),
             Padding(
               padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
             ),
