@@ -5,7 +5,7 @@ void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     theme: ThemeData.dark(),
-    home: AddingScreen(),
+    home: Todo(),
   ));
 }
 
@@ -43,7 +43,13 @@ class Todo extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => AddingScreen(),
+              ));
+        },
         child: Icon(Icons.add),
       ),
     );
