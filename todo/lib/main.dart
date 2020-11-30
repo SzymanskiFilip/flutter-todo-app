@@ -3,11 +3,12 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
+    theme: ThemeData.dark(),
     home: Todo(),
   ));
 }
 
-List<String> items = ['hello', 'world'];
+List<String> items = ['hello', 'world', 'todo', 'next element'];
 
 class Todo extends StatelessWidget {
   @override
@@ -26,6 +27,11 @@ class Todo extends StatelessWidget {
                   Text(
                     value,
                     key: Key(value),
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 50,
+                      fontWeight: FontWeight.w800,
+                    ),
                   ),
                 ],
               )
