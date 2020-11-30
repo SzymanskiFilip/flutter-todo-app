@@ -20,6 +20,9 @@ class Todo extends StatelessWidget {
       body: Center(
         child: Column(
           children: <Widget>[
+            Padding(
+              padding: EdgeInsets.fromLTRB(0, 20, 0, 0),
+            ),
             for (final value in items)
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
