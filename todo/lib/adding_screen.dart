@@ -26,6 +26,16 @@ class AddingScreen extends StatelessWidget {
                   },
                 ),
               ),
+              FlatButton(
+                onPressed: () {},
+                child: Text(
+                  "Sumbit!",
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.w900,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
