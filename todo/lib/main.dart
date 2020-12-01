@@ -25,9 +25,12 @@ class Todo extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
                 child: Container(
-                  color: Colors.purple,
                   width: 250,
                   height: 60,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(20)),
+                    color: Colors.purple,
+                  ),
                   child: Center(
                     child: Text(
                       "This are your todos!",
