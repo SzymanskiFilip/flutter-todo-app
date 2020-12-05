@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
 class AddingScreen extends StatelessWidget {
-  final _formKey = GlobalKey<FormState>();
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
