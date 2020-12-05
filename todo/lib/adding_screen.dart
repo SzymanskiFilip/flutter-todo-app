@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AddingScreen extends StatelessWidget {
+  final myController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -9,7 +11,6 @@ class AddingScreen extends StatelessWidget {
       ),
       body: Center(
         child: Form(
-          key: _formKey,
           child: Column(
             children: <Widget>[
               Padding(
@@ -17,6 +18,10 @@ class AddingScreen extends StatelessWidget {
                 child: TextField(
                   controller: myController,
                 ),
+              ),
+              FlatButton(
+                child: Text("submit"),
+                onPressed: () {},
               ),
             ],
           ),
