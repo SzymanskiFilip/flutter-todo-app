@@ -9,7 +9,7 @@ void main() {
   ));
 }
 
-List<String> items = ['hello', 'world', 'todo', 'next element'];
+List<String> items = [];
 
 class Todo extends StatefulWidget {
   @override
