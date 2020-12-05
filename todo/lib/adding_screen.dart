@@ -16,25 +16,7 @@ class AddingScreen extends StatelessWidget {
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.fromLTRB(16, 16, 16, 0),
-                child: TextFormField(
-                  decoration: InputDecoration(hintText: 'Your new Todo!'),
-                  validator: (value) {
-                    if (value.isEmpty) {
-                      return 'Please enter a new Todo!';
-                    }
-                    return null;
-                  },
-                ),
-              ),
-              FlatButton(
-                onPressed: () {},
-                child: Text(
-                  "Sumbit!",
-                  style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w900,
-                  ),
-                ),
+                child: 
               ),
             ],
           ),
