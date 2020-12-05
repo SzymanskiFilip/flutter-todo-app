@@ -34,9 +34,7 @@ class _AddingScreenState extends State<AddingScreen> {
               FlatButton(
                 child: Text("submit"),
                 onPressed: () {
-                  setState(() {
-                    items.add(myController.text);
-                  });
+                  items.add(myController.text);
                 },
               ),
             ],
