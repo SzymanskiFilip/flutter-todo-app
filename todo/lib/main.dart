@@ -11,7 +11,12 @@ void main() {
 
 List<String> items = ['hello', 'world', 'todo', 'next element'];
 
-class Todo extends StatelessWidget {
+class Todo extends StatefulWidget {
+  @override
+  _TodoState createState() => _TodoState();
+}
+
+class _TodoState extends State<Todo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
