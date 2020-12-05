@@ -16,7 +16,9 @@ class AddingScreen extends StatelessWidget {
             children: <Widget>[
               Padding(
                 padding: EdgeInsets.fromLTRB(16, 16, 16, 0),
-                child: 
+                child: TextField(
+                  controller: myController,
+                ),
               ),
             ],
           ),
